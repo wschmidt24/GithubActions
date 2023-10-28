@@ -84,7 +84,11 @@ namespace GithubActionsLab
         // Implement this method following a similar pattern as above
         public static double Power(string x, string y)
         {
-            throw new NotImplementedException();
+            int result = 1;
+            for(int i=0; i<y; i++) {
+                result = x * result;
+            }
+            return result;
         }
     }
 
